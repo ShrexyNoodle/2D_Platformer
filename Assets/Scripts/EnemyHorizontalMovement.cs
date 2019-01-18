@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHorizontalMovement : MonoBehaviour
 {
-    public float speed = 1f;
+    public float speed = 25f;
     public bool Left = true;
 
 

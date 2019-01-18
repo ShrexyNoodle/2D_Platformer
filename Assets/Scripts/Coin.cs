@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    //static betyder att denna linje kod är densamma för varenda script man hämtar den i
+    //static betyder att objektet inte kan påverkas i unity eller i ett annat skript utanför detta skript
     public static int score;
 
     public int amount = 2;

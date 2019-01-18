@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 public class ReloadLevel : MonoBehaviour
 {
     public int minimumScoreNeeded = 0;
-    public string sceneToLoad = "SampleScene";
+    public string sceneToLoad = "IntroductoryLevel";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Om en karaktär med tag "Player" (spelaren i detta fall) kolliderar och har lika med eller mer än minimum coin poäng, ladda om nivån "SampleScene" (nuvarande nivån).
+        //Om en karaktär med tag "Player" (spelaren i detta fall) kolliderar och har lika med eller mer än minimum coin poäng, ladda om nivån (nuvarande nivån).
         if(collision.tag == "Player" && Coin.score >= minimumScoreNeeded)
         {
             SceneManager.LoadScene(sceneToLoad);
